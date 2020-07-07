@@ -20,7 +20,7 @@ def define_player(name, health=100, armor=1.2):
     return {'name': name, 'health': health, 'armor': armor}
 
 
-# функция записи структуры в файл
+# function to write structure to file
 def write_player_to_file(person):
     with open('D:\\Python projects\\Battle_two_persons' + person['name'] + '.txt', 'w', encoding='UTF-8') as f:
         # with open(person['name'], 'w', encoding='UTF-8') as f:
