@@ -62,7 +62,7 @@ def start_game():
         print('Hero WIN!')
 
 
-# HERO = {'name': 'hero', 'health': 100, 'armor': 1.2}
+# HERO = {'name': 'hero', 'health': 100, 'armor': 1.3}
 # ENEMY = {'name': 'enemy', 'health': 100, 'armor': 1.2}
 
 # присвоение имен
