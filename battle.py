@@ -14,7 +14,7 @@ def attack(person1, person2):
                                                       person1['health']))
 
 
-# функция создания персонажа
+# function creation person
 def define_player(name, health=100, armor=1.2):
     print(name, health, armor)
     return {'name': name, 'health': health, 'armor': armor}
