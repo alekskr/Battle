@@ -23,8 +23,8 @@ def define_player(name, armor=1.2):  # health=100
 
 # function to write structure to file
 def write_player_to_file(person):
-    with open('D:\\Python projects\\Battle_two_persons\\' + person['name'] + '.txt', 'w', encoding='UTF-8') as f:
-        # with open(person['name'], 'w', encoding='UTF-8') as f:
+    with open(person['name'] + '.txt', 'w', encoding='UTF-8') as f:
+
         for k, v in person.items():
             f.write('{} {}\n'.format(k, v))
 
@@ -32,7 +32,7 @@ def write_player_to_file(person):
 # функция для получения структуры из файла
 def player_by_filename(name):
     player = {}
-    file = 'D:\\Python projects\\Battle_two_persons\\' + name + '.txt'  # str(filename)
+    file = name + '.txt'  # str(filename)
     with open(file, encoding='UTF-8') as f:
         for line in f:
             k, v = line.split()
